@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/agents.css">
+    <link rel="icon" type="image/png" href="../images/logo.png">
+    <title>Agents</title>
+</head>
+
+<body>
+    <section id="navbar">
+        <header class="head">
+            <nav class="nav">
+                <div class="navbar">
+                    <img src="../images/logo.png" width="25px">
+                    <h1 class="navbar-logo">Estate<span class="spn">Guru</span></h1>
+                    <div>
+                        <a href="index.html">Home</a>
+                        <a href="properties.html">Properties</a>
+                        <a href="Agents.html">Agents</a>
+                        <a href="About.html">About</a>
+                        <a href="https://www.bizjournals.com/news/residential-real-estate" target="_blank">News</a>
+                        <a href="Contact.html">Contact</a>
+                        <a href="login.html" class="btn">SignIn</a>
+                        <a href="signup.html" class="btn-hover">SignUp</a>
+                    </div>
+                </div>
+            </nav>
+        </header>
+    </section>
+    <!-- agents -->
+    <section>
+        <div class="agents-container">
+            <div class="agent">
+                <img src="../images/mh1.png" alt="Agent 1">
+                <h3>Musharraf Hussain </h3>
+                <p>Specializing in selling and renting houses, flats, and portions in Gulshan Block 4<br>An
+                    experienced real estate agent is your trusted guide for finding your dream home or<br>securing
+                    lucrative rental opportunities in this sought-after neighborhood.</p>
+                <p class="p1">Contact: 0332-26220690</p>
+                <div class="button-container">
+                    <button class="contact-button">Contact Now</button>
+                    <button class="view-profile" id="view-profile1">View Profile</button>
+                </div>
+            </div>
+            <div class="agent">
+                <img src="../images/areb1.png" alt="Agent 2">
+                <h3>Areeb Ahmed</h3>
+                <p>Specializing in selling and renting houses, flats, and portions in North karachi<br>An
+                    experienced real estate agent is your trusted guide for finding your dream home or<br>securing
+                    lucrative rental opportunities in this sought-after neighborhood.</p>
+                <p class="p1">Contact: 0331-2201904</p>
+                <div class="button-container">
+                    <button class="contact-button">Contact Now</button>
+                    <button class="view-profile" id="view-profile2">View Profile</button>
+                </div>
+            </div>
+        </div>
+        <div class="agents-container">
+            <div class="agent">
+                <img src="../images/shareeq 1.png" alt="Agent 1">
+                <h3>Muhammad Shareeq</h3>
+                <p>Specializing in selling and renting houses, flats, and portions in Bahria Town<br>An
+                    experienced real estate agent is your trusted guide for finding your dream home or<br>securing
+                    lucrative rental opportunities in this sought-after neighborhood.</p>
+                <p class="p1">Contact: 0330-1244957</p>
+                <div class="button-container">
+                    <button class="contact-button">Contact Now</button>
+                    <button class="view-profile" id="view-profile3">View Profile</button>
+                </div>
+            </div>
+            <div class="agent">
+                <img src="../images/daniyal 1.png" alt="Agent 2">
+                <h3>Daniyal Siddique</h3>
+                <p>Specializing in selling and renting houses, flats, and portions in tariq road/ bahadurabad,<br>,An
+                    experienced real estate agent is your trusted guide for finding your dream home or<br>securing
+                    lucrative rental opportunities in this sought-after neighborhood...</p>
+                <p class="p1">Contact: 0332-7392952</p>
+                <div class="button-container">
+                    <button class="contact-button">Contact Now</button>
+                    <button class="view-profile" id="view-profile4">View Profile</button>
+                </div>
+            </div>
+        </div><br><br>
+        <!-- Contact -->
+        <section class="section contact">
+            <div class="row">
+                <div class="col">
+                    <h2>EXCELLENT SUPPORT</h2>
+                    <p>We love our customers and they can reach us any time
+                        of day we will be at your service 24/7</p>
+                    <a href="" class="btn btn-1">Contact</a>
+                </div>
+                <div class="col">
+                    <form action="">
+                        <div>
+                            <input type="email" placeholder="Email Address">
+                            <a href="">Send</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+    </section>
+    <script>
+        // Get all the "Contact Now" buttons
+        const contactButtons = document.querySelectorAll('.contact-button');
+
+        // Attach event listeners to each button
+        contactButtons.forEach(button => {
+            button.addEventListener('click', function () {
+                const agentName = this.parentNode.querySelector('.agent-name').innerText;
+                const agentContact = this.parentNode.querySelector('.agent-contact').innerText;
+
+                // Show an alert box with the success message
+                alert(
+                    `Your request has been successfully sent to ${agentName}. The agent's contact information is ${agentContact}. The agent will contact you soon!`);
+            });
+        });
+
+
+        // Get the "View Profile" button element
+        var viewProfileButton = document.getElementById('view-profile1');
+
+        // Add click event listener to the button
+        viewProfileButton.addEventListener('click', function () {
+            // Redirect to the agent's profile page
+            window.location.href = 'mh.html';
+        });
+
+        // Get the "View Profile" button element
+        var viewProfileButton = document.getElementById('view-profile2');
+
+        // Add click event listener to the button
+        viewProfileButton.addEventListener('click', function () {
+            // Redirect to the agent's profile page
+            window.location.href = 'areeb.html';
+        });
+        // Get the "View Profile" button element
+        var viewProfileButton = document.getElementById('view-profile3');
+
+        // Add click event listener to the button
+        viewProfileButton.addEventListener('click', function () {
+            // Redirect to the agent's profile page
+            window.location.href = 'shareeq.html';
+        });
+        // Get the "View Profile" button element
+        var viewProfileButton = document.getElementById('view-profile4');
+
+        // Add click event listener to the button
+        viewProfileButton.addEventListener('click', function () {
+            // Redirect to the agent's profile page
+            window.location.href = 'dani.html';
+        });
+    </script>
+</body>
+
+</html>

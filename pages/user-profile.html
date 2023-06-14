@@ -1,0 +1,103 @@
+<!-- user-profile.html -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="../css/user-profile.css">
+</head>
+
+<body>
+    <section id="navbar">
+        <!-- Navbar content here -->
+    </section>
+
+    <main class="main">
+        <div class="container">
+            <!-- User profile section -->
+            <div class="profile-section">
+                <!-- User profile picture and name -->
+                <div id="avatar" class="avatar"></div>
+                <h2 id="user-name">Musharaf hussain</h2>
+                <div id="description-container">
+                    <p id="user-description"></p>
+                    <button id="edit-description">Edit</button>
+                </div>
+                <form id="description-form" style="display: none;">
+                    <textarea id="description-input" placeholder="Enter your description"></textarea>
+                    <button type="submit" id="save-btn">Save</button>
+                </form>
+                <h3>Contact: 0321501626292</h3>
+                <h3>Email: sharafhussain@gmail.com</h3>
+            </div>
+        </div>
+    </main>
+    <!-- Contact -->
+    <section class="section contact">
+        <div class="row">
+            <div class="col">
+                <h2>EXCELLENT SUPPORT</h2>
+                <p>We love our customers and they can reach us any time
+                    of day we will be at your service 24/7</p>
+                <a href="" class="btn btn-1">Contact</a>
+            </div>
+            <div class="col">
+                <form action="">
+                    <div>
+                        <input type="email" placeholder="Email Address">
+                        <a href="">Send</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Include JavaScript and CSS files if needed -->
+    <script>
+        // script.js
+        var descriptionContainer = document.getElementById('description-container');
+        var descriptionParagraph = document.getElementById('user-description');
+        var descriptionForm = document.getElementById('description-form');
+        var descriptionInput = document.getElementById('description-input');
+        var editButton = document.getElementById('edit-description');
+        // Function to show the description and hide the form
+        function showDescription(description) {
+            descriptionParagraph.textContent = description;
+            descriptionContainer.style.display = 'block';
+            descriptionForm.style.display = 'none';
+        }
+        // Function to show the form and hide the description
+        function showForm() {
+            descriptionInput.value = descriptionParagraph.textContent;
+            descriptionContainer.style.display = 'none';
+            descriptionForm.style.display = 'block';
+        }
+        // Handle form submission
+        descriptionForm.addEventListener('submit', function (event) {
+            event.preventDefault(); // Prevent form submission
+            var newDescription = descriptionInput.value;
+            showDescription(newDescription);
+        });
+        // Handle edit button click
+        editButton.addEventListener('click', function () {
+            showForm();
+        });
+        // Get the user's first name
+        const fullName = document.getElementById('user-name').innerText;
+        const firstName = fullName.split(' ')[0];
+        // Get the avatar element
+        const avatarElement = document.getElementById('avatar');
+        // Set the first letter of the first name as the avatar
+        avatarElement.innerText = firstName.charAt(0);
+
+        // Update the avatar styling
+        avatarElement.style.backgroundColor = getRandomColor(); // Replace with your preferred styling
+
+        // Function to generate random background color for the avatar
+        function getRandomColor() {
+            const colors = ['#ff7f50', '#ff6347', '#ff4500', '#ff8c00', '#ffa500', '#ffd700', '#ffdab9'];
+            return colors[Math.floor(Math.random() * colors.length)];
+        }
+    </script>
+</body>
+
+</html>
