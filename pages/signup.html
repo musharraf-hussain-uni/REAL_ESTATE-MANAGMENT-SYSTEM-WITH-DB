@@ -1,119 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>sign up</title>
-    <link rel="stylesheet" href="../css/signup.css" />
-    <link rel="icon" type="image/png" href="../images/logo.png" />
-  </head>
 
-  <body>
-    <section id="navbar">
-      <header class="head">
-        <nav class="nav">
-          <div class="navbar">
-            <img src="../images/logo.png" width="25px" />
-            <h1 class="navbar-logo">Estate<span class="spn">Guru</span></h1>
-            <div>
-              <a class="active" href="index.html">Home</a>
-              <a href="properties.html">Properties</a>
-              <a href="Agents.html">Agents</a>
-              <a href="About.html">About</a>
-              <a
-                href="https://www.bizjournals.com/news/residential-real-estate"
-                target="_blank"
-                >News</a
-              >
-              <a href="Contact.html">Contact</a>
-              <a href="login.html" class="btn">SignIn</a>
-              <a href="signup.html" class="btn-hover">SignUp</a>
-            </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>sign up</title>
+  <link rel="stylesheet" href="../css/signup.css" />
+  <link rel="icon" type="image/png" href="../images/logo.png" />
+</head>
+
+<body>
+  <section id="navbar">
+    <header class="head">
+      <nav class="nav">
+        <div class="navbar">
+          <img src="../images/logo.png" width="25px" />
+          <h1 class="navbar-logo">Estate<span class="spn">Guru</span></h1>
+          <div>
+            <a class="active" href="index.html">Home</a>
+            <a href="properties.html">Properties</a>
+            <a href="Agents.html">Agents</a>
+            <a href="About.html">About</a>
+            <a href="https://www.bizjournals.com/news/residential-real-estate" target="_blank">News</a>
+            <a href="Contact.html">Contact</a>
+            <a href="login.html" class="btn">SignIn</a>
+            <a href="signup.html" class="btn-hover">SignUp</a>
           </div>
-        </nav>
-      </header>
-    </section>
-    <main class="main">
-      <div class="container">
-        <br /><br /><br /><br /><br />
-        <form id="signup-form">
-          <label for="name">Name:</label>
-          <input type="text" id="name" name="name" required />
+        </div>
+      </nav>
+    </header>
+  </section>
+  <main class="main">
+    <div class="container">
+      <br /><br /><br /><br />
+      <h3 class="h3">Sign Up</h3>
+      <form id="signup-form">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required />
 
-          <label for="phone">Phone:</label>
-          <input type="tel" id="phone" name="phone" required />
+        <label for="phone">Phone:</label>
+        <input type="tel" id="phone" name="phone" required />
 
-          <label for="email">Email</label>
-          <input type="email" id="mail" name="mail" required />
-          <label for="Cnic">CNIC:</label>
-          <input type="text" id="cnic" name="cnic" required />
+        <label for="email">Email</label>
+        <input type="email" id="mail" name="mail" required />
+        <label for="Cnic">CNIC:</label>
+        <input type="text" id="cnic" name="cnic" required />
 
-          <label for="password">Password:</label>
+        <label for="password">Password:</label>
+        <div class="password-box">
           <input type="password" id="password" name="password" required />
-          <span
-            class="password-toggle"
-            onclick="togglePasswordVisibility('password')"
-          >
-            <i class="bi bi-eye-slash"></i
-            ><svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="16"
-              height="16"
-              fill="currentColor"
-              class="bi bi-eye-slash"
-              viewBox="0 0 16 16"
-            >
-              <path
-                d="M13.359 11.238C15.06 9.72 16 8 16 8s-3-5.5-8-5.5a7.028 7.028 0 0 0-2.79.588l.77.771A5.944 5.944 0 0 1 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.134 13.134 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755-.165.165-.337.328-.517.486l.708.709z"
-              />
-              <path
-                d="M11.297 9.176a3.5 3.5 0 0 0-4.474-4.474l.823.823a2.5 2.5 0 0 1 2.829 2.829l.822.822zm-2.943 1.299.822.822a3.5 3.5 0 0 1-4.474-4.474l.823.823a2.5 2.5 0 0 0 2.829 2.829z"
-              />
-              <path
-                d="M3.35 5.47c-.18.16-.353.322-.518.487A13.134 13.134 0 0 0 1.172 8l.195.288c.335.48.83 1.12 1.465 1.755C4.121 11.332 5.881 12.5 8 12.5c.716 0 1.39-.133 2.02-.36l.77.772A7.029 7.029 0 0 1 8 13.5C3 13.5 0 8 0 8s.939-1.721 2.641-3.238l.708.709zm10.296 8.884-12-12 .708-.708 12 12-.708.708z"
-              />
-            </svg>
-          </span>
-          <label for="Cpassword">Confirm Password:</label>
+
+        </div>
+        <label for="Cpassword">Confirm Password:</label>
+        <div class="password-box">
           <input type="password" id="cpassword" name="cpassword" required />
-          <span
-            class="password-toggle"
-            onclick="togglePasswordVisibility('cpassword')"
-          >
-            <i class="bi bi-eye-slash"></i
-            ><svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="16"
-              height="16"
-              fill="currentColor"
-              class="bi bi-eye-slash"
-              viewBox="0 0 16 16"
-            >
-              <path
-                d="M13.359 11.238C15.06 9.72 16 8 16 8s-3-5.5-8-5.5a7.028 7.028 0 0 0-2.79.588l.77.771A5.944 5.944 0 0 1 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.134 13.134 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755-.165.165-.337.328-.517.486l.708.709z"
-              />
-              <path
-                d="M11.297 9.176a3.5 3.5 0 0 0-4.474-4.474l.823.823a2.5 2.5 0 0 1 2.829 2.829l.822.822zm-2.943 1.299.822.822a3.5 3.5 0 0 1-4.474-4.474l.823.823a2.5 2.5 0 0 0 2.829 2.829z"
-              />
-              <path
-                d="M3.35 5.47c-.18.16-.353.322-.518.487A13.134 13.134 0 0 0 1.172 8l.195.288c.335.48.83 1.12 1.465 1.755C4.121 11.332 5.881 12.5 8 12.5c.716 0 1.39-.133 2.02-.36l.77.772A7.029 7.029 0 0 1 8 13.5C3 13.5 0 8 0 8s.939-1.721 2.641-3.238l.708.709zm10.296 8.884-12-12 .708-.708 12 12-.708.708z"
-              />
-            </svg>
-          </span>
+          <img src="../images/close eye.png" id="eyeicon" height="20px" width="20px">
+        </div>
 
-          <p>Have existing account? <a href="login.html">Log-In</a></p>
-          <br />
-          <input type="submit" value="Register" id="signUp" />
-        </form>
-      </div>
-    </main>
-    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-database.js"></script>
+        <p>Have existing account? <a href="login.html">Log-In</a></p>
+        <br />
+        <input type="submit" value="Register" id="signUp" />
+      </form>
+    </div>
+  </main>
+  <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-database.js"></script>
 
-    <script type="module">
-      // Import the functions you need from the SDKs you need createUserWithEmailAndPassword
+  <script type="module">
+    // Import the functions you need from the SDKs you need createUserWithEmailAndPassword
       import { initializeApp } from "https://www.gstatic.com/firebasejs/9.22.2/firebase-app.js";
       import {
         getAuth,
@@ -142,20 +98,8 @@
       // console.log(app);
       // console.log(auth);
 
-      function togglePasswordVisibility(inputId) {
-        const input = document.getElementById(inputId);
-        const icon = input.nextElementSibling.querySelector("i");
 
-        if (input.type === "password") {
-          input.type = "text";
-          icon.classList.remove("bi-eye");
-          icon.classList.add("bi-eye-slash");
-        } else {
-          input.type = "password";
-          icon.classList.remove("bi-eye-slash");
-          icon.classList.add("bi-eye");
-        }
-      }
+
 
       const signUp = document.getElementById("signup-form");
 
@@ -189,6 +133,37 @@
 
         console.log(name, phone, email, CNIC, password);
       }
+
+
+//show and hide password
+      let eyeicon = document.getElementById("eyeicon");
+    let password = document.getElementById("password");
+    eyeicon.onclick = function () {
+      if (password.type == "password") {
+        password.type = "text";
+        eyeicon.src = "../images/open eye.png"
+      } else {
+        password.type = "password";
+        eyeicon.src = "../images/close eye.png"
+      }
+    }
+
+    //show & hide password for confirm
+    const passwordInput = document.getElementById("cpassword");
+const eyeIcon = document.getElementById("eyeicon");
+
+eyeIcon.addEventListener("click", function() {
+  if (passwordInput.type === "password") {
+    passwordInput.type = "text";
+    eyeIcon.src = "../images/open eye.png";
+  } else {
+    passwordInput.type = "password";
+    eyeIcon.src = "../images/close eye.png";
+  }
+});
+
+
     </script>
-  </body>
+</body>
+
 </html>

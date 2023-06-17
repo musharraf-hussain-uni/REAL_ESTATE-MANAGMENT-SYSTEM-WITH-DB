@@ -13,8 +13,6 @@ body{
     justify-content: space-between;
     align-items: center;
     padding: 14px;
-
-  
 }
 
 .navbar-logo {
@@ -127,9 +125,14 @@ h3{
   }
 
   .carousel img{
-    width: 25em;
+    width: 20em;
     height: 20em;
   }
+
+
+
+
+
 
   /* Contact */
   .contact {
@@ -204,98 +207,42 @@ color: #fff;
     border-radius: 10rem;
 }
 
-.footer {
-  background-color: #f2f2f2;
-  padding-left: 150vh;
-}
-.row {
-    display: inline-flex;
-    flex-wrap: wrap;
-}
+/* contact responsive */
 
-  
-.A{
-    display: block;
-    margin-bottom: 1.5px;
-    color: #b8561a;
-    text-decoration: dotted;
-  }
-  .h4{
-   font-size: 20px;
-   text-decoration: underline;
+/* Responsive adjustments */
 
+@media (max-width: 767px) {
+  .contact {
+    padding: 3rem;
   }
 
-  @media only screen and (max-width: 996px) {
-    .contact {
-      padding: 8rem 8rem;
-    }
+  .contact .row {
+    grid-template-columns: 1fr;
+    gap: 2rem;
   }
-  
-  @media only screen and (max-width: 768px) {
-    .contact .row {
-      grid-template-columns: 1fr;
-      gap: 5rem 0;
-    }
-  
-    .contact form div {
-      width: 100%;
-    }
+
+  .contact .row .col {
+    text-align: center;
   }
-  
-  @media only screen and (max-width: 567px) {
-    .contact {
-      padding: 8rem 1rem;
-    }
-  }
-  
-  
 
-
-
-  .picture-section {
-    position: relative;
+  .contact .row .col p {
     width: 100%;
-    height: 400px;
-    overflow: hidden;
   }
-  
-  .picture-container {
-    display: flex;
-    width: 400%;
-    height: 100%;
-    transition: transform 0.3s ease-in-out;
+}
+
+/* Additional media queries */
+
+@media (max-width: 991px) {
+  .contact {
+    padding: 4rem;
   }
-  
-  .picture-container img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+}
+
+@media (max-width: 1199px) {
+  .contact {
+    padding: 5rem;
   }
-  
-  .navigation {
-    position: absolute;
-    top: 50%;
-    left: 10px;
-    transform: translateY(-50%);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  .navigation span {
-    cursor: pointer;
-    color: #fff;
-    font-size: 24px;
-    padding: 5px;
-    background-color: rgba(0, 0, 0, 0.5);
-    transition: background-color 0.3s ease-in-out;
-  }
-  
-  .navigation span:hover {
-    background-color: rgba(0, 0, 0, 0.8);
-  }
-  
+}
   .h2{
     font-size: 30px;
     text-align: center;

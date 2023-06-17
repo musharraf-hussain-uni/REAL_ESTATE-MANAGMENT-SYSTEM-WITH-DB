@@ -1,64 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Addmission Form</title>
-    <link rel="stylesheet" href="../css/login.css" />
-    <link rel="icon" type="image/png" href="../images/logo.png" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;800&display=swap"
-      rel="stylesheet"
-    />
-  </head>
 
-  <body>
-    <section id="navbar">
-      <header class="head">
-        <nav class="nav">
-          <div class="navbar">
-            <img src="../images/logo.png" width="25px" />
-            <h1 class="navbar-logo">Estate<span class="spn">Guru</span></h1>
-            <div>
-              <a class="active" href="index.html">Home</a>
-              <a href="properties.html">Properties</a>
-              <a href="Agents.html">Agents</a>
-              <a href="About.html">About</a>
-              <a
-                href="https://www.bizjournals.com/news/residential-real-estate"
-                target="_blank"
-                >News</a
-              >
-              <a href="Contact.html">Contact</a>
-              <a href="login.html" class="btn">Log-In</a>
-              <a href="signup.html" class="btn-hover">Sign-Up</a>
-            </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login</title>
+  <link rel="stylesheet" href="../css/login.css" />
+  <link rel="icon" type="image/png" href="../images/logo.png" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;800&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+  <section id="navbar">
+    <header class="head">
+      <nav class="nav">
+        <div class="navbar">
+          <img src="../images/logo.png" width="25px" />
+          <h1 class="navbar-logo">Estate<span class="spn">Guru</span></h1>
+          <div>
+            <a class="active" href="index.html">Home</a>
+            <a href="properties.html">Properties</a>
+            <a href="Agents.html">Agents</a>
+            <a href="About.html">About</a>
+            <a href="https://www.bizjournals.com/news/residential-real-estate" target="_blank">News</a>
+            <a href="Contact.html">Contact</a>
+            <a href="login.html" class="btn">SignIn</a>
+            <a href="signup.html" class="btn-hover">SignUp</a>
           </div>
-        </nav>
-      </header>
-    </section>
-    <main class="main">
-      <div class="container">
-        <h1 class="h1"></h1>
-        <br /><br /><br /><br /><br /><br /><br />
-        <form id="login-form">
-          <label for="email">Email:</label>
-          <input type="email" id="email" name="email" required />
+        </div>
+      </nav>
+    </header>
+  </section>
+  <main class="main">
+    <div class="container">
+      <h1 class="h1"></h1>
+      <br /><br /><br /><br /><br />
+      <h3 class="h3">Login</h3>
 
-          <label for="password">Password:</label>
-          <input type="password" id="password" name="password" required />
-          <p>Don't have an account? <a href="signup.html">Signup</a></p>
-          <br />
+      <form id="login-form">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
 
-          <input type="submit" value="Log In" id="login-button" />
-        </form>
-      </div>
-      <div id="result-box">
-        <h3 id="result"></h3>
-      </div>
-    </main>
+        <label for="password">Password:</label>
+        <div class="password-box">
+          <input type="password" id="password" name=" password" required />
+          <img src="../images/close eye.png" id="eyeicon" height="20px" width="20px">
+        </div>
+        <p>Don't have an account? <a href="signup.html">Signup</a></p>
+        <br />
 
-    <script type="module" src="../javascript/login.js"></script>
-  </body>
+        <input type="submit" value="Log In" id="login-button" />
+      </form>
+    </div>
+    <div id="result-box">
+      <h3 id="result"></h3>
+    </div>
+  </main>
+
+  <script type="module" src="../javascript/login.js"></script>
+
+  <script>
+    let eyeicon = document.getElementById("eyeicon");
+    let password = document.getElementById("password");
+    eyeicon.onclick = function () {
+      if (password.type == "password") {
+        password.type = "text";
+        eyeicon.src = "../images/open eye.png"
+      } else {
+        password.type = "password";
+        eyeicon.src = "../images/close eye.png"
+      }
+    }
+  </script>
+</body>
+
 </html>

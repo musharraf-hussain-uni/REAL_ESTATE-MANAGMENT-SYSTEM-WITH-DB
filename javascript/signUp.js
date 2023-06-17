@@ -87,31 +87,3 @@ signupForm.addEventListener('submit', (e) => {
         // TODO: Handle the error and display a message to the user
       });
   });
-
-
-  // Add submit event listener to the form
-  signupForm.addEventListener('submit', (e) => {
-    e.preventDefault(); // Prevent form submission
-
-    // Get input values
-    let name = signupForm.name.value;
-    let phone = signupForm.phone.value;
-    let email = signupForm.mail.value;
-    let cnic = signupForm.cnic.value;
-    let password = signupForm.password.value;
-
-    // // Register user with email and password
-    // firebase.auth().createUserWithEmailAndPassword(email, password)
-    //     .then((userCredential) => {
-    //         // User creation successful
-    //         const user = userCredential.user;
-    //         console.log("User created:", user);
-    //         // TODO: Save user data to database or perform other actions
-    //     })
-    //     .catch((error) => {
-    //         // User creation failed
-    //         const errorCode = error.code;
-    //         const errorMessage = error.message;
-    //         console.error("User creation error:", errorCode, errorMessage);
-    //         // TODO: Handle the error and display a message to the user
-        });

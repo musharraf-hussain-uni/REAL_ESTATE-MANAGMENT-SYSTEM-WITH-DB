@@ -3,6 +3,8 @@
     margin: 0%;
     padding: 0%;
 }
+
+
  .navbar {
     background-color: #3d3b3a;
     display: flex;
@@ -88,23 +90,23 @@
   border: 2px solid #cd621f;
 }
 
-.h1{
-    text-align: center;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: #cd621f;
-    font-size: 100px;
-    margin-left: 90vh;
+.h3{
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #cd621f;
+  font-size: 35px;
+  margin-left: 10px;
+  margin-top:  10px;
+  margin-bottom: 1vh;
 }
-form {
-    max-width: 350px;
-    margin-right: 100vh;
-    font-family: Arial, sans-serif;
-    background-color: #aeaead;
-    padding: 20px;
-    border-radius: 5px;
-    margin-left: 50px;
-  }
-  
+#login-form{
+  max-width: 350px;
+  margin-left: 70vh;
+  font-family: Arial, sans-serif;
+  background-color: #aeaead;
+  padding: 20px;
+  border-radius: 5px;
+}
   label, select, textarea {
     display: inline-flexbox;
     color: #cd621f;
@@ -126,6 +128,21 @@ form {
     height: 100px;
   }
   
+
+.password-box{
+position: relative;
+}
+input[type="password"] {
+  padding-right: 30px; /* Add space for the eye image */
+}
+
+#eyeicon{
+  position: absolute;
+  top: 40%;
+  right: 5px;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
   input[type="submit"] {
     background-color: #cd621f;
     color: white;
@@ -226,3 +243,19 @@ color: #fff;
   color: white;
   
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

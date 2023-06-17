@@ -66,19 +66,14 @@ function createPropertyCard(property) {
 // Initial filtering on page load
 filterProperties();
     
+function redirectToAgents() {
+  window.location.href = 'Agents.html';
+}
+//contact email alert
+function showAlert(event) {
+  event.preventDefault(); // Prevent the default behavior of the link
 
-// // Get references to the buttons
-// const rentButton1 = document.getElementById('viewagent');
+  const email = document.getElementById('emailInput').value;
+  alert(`Email '${email}' successfully sent!`);
+}
 
-// // Add click event listeners
-// rentButton1.addEventListener('click', function() {
-//   window.location.href = 'Agents.html?';
-// });
-
-// // Get references to the buttons
-// const rentButton2 = document.getElementById('viewagent');
-
-// // Add click event listeners
-// rentButton2.addEventListener('click', function() {
-//   window.location.href = 'Agents.html?';
-// });

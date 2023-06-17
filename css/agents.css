@@ -84,6 +84,13 @@
     border: 2px solid #cd621f;
 }
 
+
+
+
+
+
+
+
 /* Existing CSS styles for the navigation bar */
 
 /* Additional CSS styles */
@@ -161,28 +168,44 @@
   margin-right: 10px; /* Adjust margin between buttons */
 }
 
-@media (max-width: 768px) {
-  .navbar {
+
+/* responsive */
+/* Responsive adjustments */
+
+@media (max-width: 767px) {
+  .agents-container {
+    grid-template-columns: 1fr;
+    height: auto;
+    top: 0;
+    gap: 20px;
+  }
+
+  .agent {
+    padding: 1em;
+  }
+
+  .agent img {
+    width: 150px;
+    height: 150px;
+  }
+
+  .agent h3 {
+    font-size: 18px;
+  }
+
+  .button-container {
     flex-direction: column;
-    align-items: center;
   }
 
-  .navbar-logo {
-    margin-right: 0;
-  }
-
-  .navbar a {
+  .contact-button,
+  .view-profile {
     margin: 10px 0;
   }
-
-  .content h1 {
-    font-size: 70px;
-  }
-
-  .content p {
-    font-size: 20px;
-  }
 }
+
+
+
+
 /* Contact */
 .contact {
   background-color: dimgrey;
@@ -254,4 +277,42 @@ color: #fff;
   margin: 0.5rem;
   padding: 1rem 1rem;
   border-radius: 10rem;
+}
+
+
+/* contact responsive */
+
+/* Responsive adjustments */
+
+@media (max-width: 767px) {
+  .contact {
+    padding: 3rem;
+  }
+
+  .contact .row {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .contact .row .col {
+    text-align: center;
+  }
+
+  .contact .row .col p {
+    width: 100%;
+  }
+}
+
+/* Additional media queries */
+
+@media (max-width: 991px) {
+  .contact {
+    padding: 4rem;
+  }
+}
+
+@media (max-width: 1199px) {
+  .contact {
+    padding: 5rem;
+  }
 }

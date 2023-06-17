@@ -3,11 +3,10 @@
     background-color: #3d3b3a;
     color: #fff;
 }
-.profile-section {
+.main{
     text-align: center;
-    padding: 20px;
-    margin-top: 7vh;
-    background-color: aqua;
+ margin-left: 45vh;
+    margin-top: 20vh;
     width: 94vh;
     border-radius: 50px;
     padding: 20px;
@@ -16,12 +15,12 @@
     width: 200px;
     height: 200px;
     object-fit: cover;
-    border-radius: 50%; 
+    border-radius: 50%;
   }
 
   
   #user-name {
-    background-color: aqua;
+
     margin-top: 10px;
     font-size: 35px;
 text-transform: uppercase;
@@ -29,7 +28,7 @@ color: #cd621f;
 
   }
   #edit-description{
-    background-color: aqua;
+
     width: 100px;
     margin: 2.5px;
     padding: 5px;
@@ -74,11 +73,7 @@ color: #cd621f;
     50% { border-color: #ccc; }
   }
   
-  
-  #edit-description:focus {
-    background-color: aqua;
-    outline: none;
-  }
+
   
 
 

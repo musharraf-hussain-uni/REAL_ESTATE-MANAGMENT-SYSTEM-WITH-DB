@@ -67,24 +67,7 @@ let mainF = (e) => {
 
 window.addEventListener("load", mainF);
 
-// script.js
-// Add event listener to the login button
-// const loginButton = document.getElementById("login-button");
-// loginButton.addEventListener("click", handleLogin);
 
-// // Function to handle login functionality
-// function handleLogin(event) {
-//   event.preventDefault();
-
-//   // Perform user authentication and validation here
-//   // If the user is authenticated and validated, redirect to the user information page
-//   const loginSuccess = true; // Replace with your authentication logic
-
-//   if (loginSuccess) {
-//     // Redirect to the user information page
-//     window.location.href = "user-profile.html";
-//   }
-// }
 
 // Get the form element and result box
 var loginForm = document.getElementById("login-form");
@@ -116,27 +99,25 @@ const handleSubmit = (event) => {
     });
 
   console.log(email, password);
+  // document.getElementById('login-button').addEventListener('click', () => {
+  //   // Get the email and password values
+  //   const email = document.getElementById('email').value;
+  //   const password = document.getElementById('password').value;
+  
+  //   // Perform login logic here
+  
+  //   // Show alert box with email and password
+  //   alert(`Successfully logged in!\nEmail: ${email}\nPassword: ${password}`);
+  
+  //   // Redirect to user profile page
+  //   window.location.href = 'user-profile.html';
+  // });
+  
 };
 
 // Add form submit event listener
 loginForm.addEventListener("submit", handleSubmit);
 
-// function(event) {
-//   event.preventDefault(); // Prevent form submission
 
-//   // Get the entered username and password
-//   var email = document.getElementById('email').value;
-//   var password = document.getElementById('password').value;
 
-//   // Validate the username and password
-//   if (email === 'your_email' && password === 'your_password') {
-//     result.textContent = email + ' successfully logged in';
-//     resultBox.style.color = 'green';
-//   } else {
-//     result.textContent = 'Sorry, we can\'t find your ID. Please register yourself first.';
-//     resultBox.style.color = 'red';
-//   }
 
-//   // Clear the form fields
-//   loginForm.reset();
-// }
