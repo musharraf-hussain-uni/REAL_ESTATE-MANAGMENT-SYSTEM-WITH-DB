@@ -69,11 +69,17 @@ filterProperties();
 function redirectToAgents() {
   window.location.href = 'Agents.html';
 }
-//contact email alert
+
+
+// contact alertbox
+
 function showAlert(event) {
   event.preventDefault(); // Prevent the default behavior of the link
 
   const email = document.getElementById('emailInput').value;
   alert(`Email '${email}' successfully sent!`);
 }
+
+const sendLink = document.querySelector('.col a');
+sendLink.addEventListener('click', showAlert);
 
