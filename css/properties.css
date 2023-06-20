@@ -84,6 +84,32 @@ body{
     border: 2px solid #cd621f;
 }
 
+
+
+/* Responsive Styles */
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navbar-logo {
+    margin-right: 0;
+  }
+
+  .navbar a {
+    margin: 10px 0;
+  }
+
+  .content h1 {
+    font-size: 70px;
+  }
+
+  .content p {
+    font-size: 20px;
+  }
+}
 .main1{
     background: url(../images/about1.png);
     background-size: cover;
