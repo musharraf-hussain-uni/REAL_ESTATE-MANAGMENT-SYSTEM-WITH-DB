@@ -39,20 +39,20 @@ createUserWithEmailAndPassword(auth, "example@example.com", "password123")
         console.error("Error creating user:", errorCode, errorMessage);
     });
 
-function togglePasswordVisibility(inputId) {
-    const input = document.getElementById(inputId);
-    const icon = input.nextElementSibling.querySelector('i');
+// function togglePasswordVisibility(inputId) {
+//     const input = document.getElementById(inputId);
+//     const icon = input.nextElementSibling.querySelector('i');
 
-    if (input.type === 'password') {
-        input.type = 'text';
-        icon.classList.remove('bi-eye');
-        icon.classList.add('bi-eye-slash');
-    } else {
-        input.type = 'password';
-        icon.classList.remove('bi-eye-slash');
-        icon.classList.add('fa-eye');
-    }
-}
+//     if (input.type === 'password') {
+//         input.type = 'text';
+//         icon.classList.remove('bi-eye');
+//         icon.classList.add('bi-eye-slash');
+//     } else {
+//         input.type = 'password';
+//         icon.classList.remove('bi-eye-slash');
+//         icon.classList.add('fa-eye');
+//     }
+// }
 
 
 
